@@ -126,22 +126,27 @@
             <tr>
                 <th>Data Type</th>
                 <th>Purpose</th>
-                <th>Storage Duration</th>
+                <th>Storage Location</th>
             </tr>
             <tr>
-                <td><strong>Device Identifier</strong></td>
-                <td>A randomly generated unique ID to identify your device for the leaderboard</td>
-                <td>Until you delete the app or request deletion</td>
+                <td><strong>User ID</strong></td>
+                <td>A randomly generated unique ID (e.g., "user_1704567890_0042") to identify your device for the leaderboard. This is NOT linked to your Apple ID, device serial number, or any personal identifier.</td>
+                <td>Local device + Cloud (AWS)</td>
             </tr>
             <tr>
                 <td><strong>Game Scores</strong></td>
-                <td>Your high scores and game statistics for the leaderboard</td>
-                <td>Until you request deletion</td>
+                <td>Your high scores for each game mode (Streak, Puzzle) submitted to the global leaderboard</td>
+                <td>Cloud (AWS)</td>
             </tr>
             <tr>
-                <td><strong>Games Played Count</strong></td>
-                <td>Number of games played, displayed on leaderboard</td>
-                <td>Until you request deletion</td>
+                <td><strong>Game History</strong></td>
+                <td>Detailed record of past games including: questions asked, your answers, correct answers, timestamps, and scores. Used to show your progress and learning insights.</td>
+                <td>Local device only</td>
+            </tr>
+            <tr>
+                <td><strong>App Preferences</strong></td>
+                <td>High score, total games played, total correct answers, last played date</td>
+                <td>Local device only</td>
             </tr>
         </table>
 
@@ -154,8 +159,8 @@
             </tr>
             <tr>
                 <td><strong>Username</strong></td>
-                <td>Display name shown on the global leaderboard</td>
-                <td>Optional - you can skip this</td>
+                <td>Display name shown on the global leaderboard. This is the SAME username across all game categories (Geography, Sports, etc.) and game modes (Streak, Puzzle).</td>
+                <td>Optional - you can skip or change later</td>
             </tr>
         </table>
 
